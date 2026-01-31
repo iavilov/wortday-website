@@ -13,6 +13,11 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
+  // Config for non-TypeScript JS files (config files)
+  {
+    files: ["**/*.config.js", "**/*.config.mjs"],
+    rules: {},
+  },
 ]);
 
 export default eslintConfig;
